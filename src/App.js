@@ -1,12 +1,15 @@
 import React from "react";
+import signInApi from "./service/APIs";
+import Login from "./components/Login";
 import "./Global.css";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <h1>Challenge books</h1>
+      <Login />
+      {console.log(signInApi("desafio@ioasys.com.br", "12341234"))}
     </div>
   );
-}
+};
 
 export default App;

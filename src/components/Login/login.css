@@ -1,0 +1,33 @@
+.login-background {
+  background-image: url("../../images/background-image.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-size: cover;
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.login-background .form-body {
+  width: 368px;
+  height: 224px;
+  margin: 272px 0 272px 115px;
+
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.login-background .form-body .form-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.login-background .form-body .form-header span {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 40px;
+  color: white;
+  margin-left: 16.6px;
+}
