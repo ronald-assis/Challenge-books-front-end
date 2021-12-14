@@ -1,0 +1,20 @@
+.not-found-body {
+  width: 80%;
+  margin: auto;
+}
+
+.not-found {
+  display: flex;
+  justify-content: center;
+}
+
+.not-found-header {
+  margin: 38px auto;
+}
+
+@media screen and (max-width: 414px) {
+  .not-found-body .not-found img {
+    width: 358px;
+    align-items: center;
+  }
+}
