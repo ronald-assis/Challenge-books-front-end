@@ -1,5 +1,5 @@
 import React from "react";
-import Form from "../Form";
+import Form from "../../components/Form";
 import whiteLogo from "../../images/white-logo.svg";
 import "./login.css";
 

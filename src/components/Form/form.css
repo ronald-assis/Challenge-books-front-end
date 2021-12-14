@@ -51,4 +51,10 @@ form .password-label button {
   line-height: 20px;
   width: 85px;
   margin: 4px 0;
+  cursor: pointer;
+}
+
+form .error-message {
+  width: 239px;
+  margin-top: 16px;
 }
