@@ -5,7 +5,7 @@ const signInApi = async (login, pass) => {
   const object = {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ email, password, refreshToken: "12341234" }),
+    body: JSON.stringify({ email, password }),
   };
   const url = `https://books.ioasys.com.br/api/v1/auth/sign-in`;
 

@@ -9,6 +9,7 @@ const Header = () => {
   const handleClick = () => {
     history.push("/");
     localStorage.removeItem("token");
+    localStorage.removeItem("refresh-token");
   };
 
   const Location = useLocation();

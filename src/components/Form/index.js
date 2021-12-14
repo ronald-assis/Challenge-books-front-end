@@ -5,7 +5,7 @@ import errorMessage from "../../images/erro.svg";
 import "./form.css";
 
 const Form = () => {
-  const initialState = { login: "desafio@ioasys.com.br", pass: "12341234" };
+  const initialState = { login: "", pass: "" };
   const [values, setValue] = useState(initialState);
   const [error, setError] = useState(false);
   const history = useHistory();
