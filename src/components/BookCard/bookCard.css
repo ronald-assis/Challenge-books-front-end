@@ -1,0 +1,106 @@
+.main-content {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  margin: auto;
+}
+
+.main-content button {
+  background-color: var(--background-color);
+  flex: 1 0 25%;
+  margin: 0 14px 16px 0;
+}
+.main-content .book-card {
+  background-color: white;
+  box-shadow: 0px 6px 24px #54105f21;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.main-content .book-card .book-information {
+  margin-left: 16px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column;
+  line-height: 14px;
+  text-align: start;
+}
+
+.main-content .book-card .book-img {
+  width: 81px;
+}
+
+.main-content .book-card .book-information .title-and-author {
+  margin-bottom: 10px;
+}
+
+.main-content .book-card .book-information .book-description p {
+  padding-bottom: 3px;
+}
+
+@media screen and (max-width: 414px) {
+  .main-content button {
+    margin: 0 0 16px 0;
+  }
+}
+
+@media screen and (max-width: 1669px) {
+  .main-content button {
+    width: 272px;
+    margin: 0 0 16px 0;
+  }
+  .main-content .book-card {
+    height: 160px;
+    /* width: 300px; */
+    margin-right: 16px;
+  }
+  .main-content .book-card img {
+    width: 81px;
+    height: 122px;
+  }
+
+  .main-content .book-card .book-information {
+    height: 125px;
+  }
+}
+
+@media screen and (min-width: 1670px) {
+  .main-content h1 {
+    font-size: 16px;
+  }
+  .main-content h2,
+  .main-content p {
+    font-size: 14px;
+  }
+
+  .main-content button {
+    flex: 1 0 20%;
+  }
+
+  .main-content .book-card {
+    height: 190px;
+  }
+
+  .main-content .book-card .book-img {
+    width: 111px;
+  }
+
+  .main-content .book-card img {
+    width: 111px;
+    height: 151px;
+  }
+
+  .main-content .book-card .book-information {
+    margin-left: 16px;
+    height: 153px;
+    justify-content: space-around;
+  }
+  .main-content .book-card .book-information .title-and-author {
+    margin-bottom: 10px;
+  }
+}
