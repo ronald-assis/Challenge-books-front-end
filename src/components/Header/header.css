@@ -1,0 +1,42 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+header .header-logo,
+.header-wellcome {
+  display: flex;
+  align-items: center;
+}
+
+header .header-logo span {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 40px;
+  color: var(--black-color);
+  margin-left: 16.6px;
+}
+
+@media screen and (max-width: 414px) {
+  header .header-wellcome p {
+    display: none;
+  }
+}
+
+header .header-wellcome p {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--black-color);
+  margin-right: 16px;
+}
+
+header .header-wellcome p span {
+  font-weight: 700;
+}
+
+header .header-wellcome button {
+  width: 32px;
+  height: 32px;
+  clip-path: circle(50% at 50% 50%);
+  cursor: pointer;
+}
