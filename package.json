@@ -2,7 +2,7 @@
   "name": "challenge-books-front-end",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ronald-assis.github.io/Challenge-books-front-end/",
+  "homepage": "http://ronald-assis.com/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^11.2.7",
