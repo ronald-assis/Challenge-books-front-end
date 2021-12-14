@@ -1,0 +1,117 @@
+.book-details {
+  display: flex;
+  flex-flow: column;
+  background: var(--background-label);
+  backdrop-filter: blur(2px);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.book-details .details-button {
+  display: flex;
+  justify-content: end;
+  margin: 16px 17px 32px auto;
+}
+
+.book-details .details-button button {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.book-details .main-details {
+  display: flex;
+  align-self: center;
+  width: 769px;
+  padding: 48px;
+  background-color: white;
+  box-shadow: 0px 16px 80px #00000052;
+  border-radius: 4px;
+}
+
+.book-details .main-details .details-book-img img {
+  width: 349px;
+  height: 512.29px;
+  margin-right: 48px;
+}
+
+.book-details .main-details .details .book-title {
+  margin-bottom: 32px;
+}
+
+.book-details .main-details .details .book-title h1 {
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.book-details .main-details .details .informaction p {
+  color: var(--black-color);
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.book-details .main-details .details .informaction .content-information div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book-details
+  .main-details
+  .details
+  .informaction
+  .content-information
+  div
+  span {
+  font-size: 12px;
+  color: var(--book-discription-color);
+}
+
+.book-details .main-details .details .review {
+  margin-top: 32px;
+}
+
+.book-details .main-details .details .review {
+  margin-top: 32px;
+}
+
+.book-details .main-details .details .review p:nth-child(1) {
+  color: var(--black-color);
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.book-details .main-details .details .review p:nth-child(2) img {
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 415px) {
+  .main-content {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .book-details {
+    height: 1050px;
+    width: 100%;
+  }
+
+  .book-details .main-details {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    padding: 24px;
+  }
+
+  .book-details .main-details .details-book-img img {
+    width: 240px;
+    height: 351px;
+    margin: 0;
+    filter: drop-shadow(0px 11.9008px 17.8512px rgba(0, 0, 0, 0.3));
+  }
+}
