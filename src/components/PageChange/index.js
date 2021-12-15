@@ -18,7 +18,7 @@ const PageChange = ({
         className="previous"
         type="button"
         disabled={previousDisabled}
-        onClick={() => handleClickPreviousPage()}
+        onClick={handleClickPreviousPage}
       >
         {`<`}
       </button>
@@ -26,7 +26,7 @@ const PageChange = ({
         className="next"
         type="button"
         disabled={nextDisabled}
-        onClick={() => handleClickNextPage()}
+        onClick={handleClickNextPage}
       >
         {`>`}
       </button>
