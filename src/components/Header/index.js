@@ -1,18 +1,17 @@
 import React from "react";
-import { useLocation, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import blackLogo from "../../images/black-logo.svg";
 import LogOut from "../../images/logOut.svg";
 import "./header.css";
 
-const Header = () => {
+const Header = ({ user = "Infelizmente, algo deu errado!", wellcome = "" }) => {
   const history = useHistory();
   const handleClick = () => {
-    history.push("/");
+    history.push("/login");
     localStorage.removeItem("token");
     localStorage.removeItem("refresh-token");
   };
 
-  const Location = useLocation();
   return (
     <header>
       <div className="header-logo">
@@ -21,7 +20,7 @@ const Header = () => {
       </div>
       <div className="header-wellcome">
         <p>
-          Bem vindo, <span>{Location.state.params}</span>
+          {wellcome} <span>{user}</span>
         </p>
         <button type="button" onClick={handleClick}>
           <img src={LogOut} alt="Log Out" />
