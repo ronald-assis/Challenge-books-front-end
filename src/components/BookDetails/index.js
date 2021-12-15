@@ -40,23 +40,23 @@ const BookDetails = ({ book, closeDetails, setPosition, setwidth }) => {
               </div>
               <div>
                 <p>publicão</p>
-                <span>{`${book.published}`}</span>
+                <span>{book.published}</span>
               </div>
               <div>
                 <p>idioma</p>
-                <span>{`${book.language}`}</span>
+                <span>{book.language}</span>
               </div>
               <div>
                 <p>titulo</p>
-                <span>{`${book.title}`}</span>
+                <span>{book.title}</span>
               </div>
               <div>
                 <p>ISBN-10</p>
-                <span>{`${book.isbn10}`}</span>
+                <span>{book.isbn10}</span>
               </div>
               <div>
                 <p>ISBN-13</p>
-                <span>{`${book.isbn13}`}</span>
+                <span>{book.isbn13}</span>
               </div>
             </div>
           </div>
