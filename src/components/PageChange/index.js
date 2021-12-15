@@ -12,7 +12,7 @@ const PageChange = ({
     <div className="change-page">
       <p>
         Pagina <span>{page}</span> de
-        <span>{allPages}</span>
+        <span>{` ${allPages}`}</span>
       </p>
       <button
         className="previous"
