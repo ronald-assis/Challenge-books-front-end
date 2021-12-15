@@ -11,6 +11,25 @@
   padding-left: 115px;
 }
 
+@media screen and (max-width: 320px) {
+  .login-background {
+    padding: 0;
+    background-position-x: -272px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .login-background {
+    background-position-x: -355px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .login-background {
+    background-position-x: -410px;
+  }
+}
+
 @media screen and (max-width: 414px) {
   .login-background {
     padding: 0;
@@ -31,6 +50,13 @@
 
   .login-background .form-body .form .password-label input {
     width: 157px;
+  }
+}
+
+@media screen and (min-width: 415px) {
+  .login-background {
+    background-position-x: center;
+    background-position-y: inherit;
   }
 }
 
