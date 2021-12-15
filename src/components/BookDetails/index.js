@@ -2,10 +2,11 @@ import React from "react";
 import Quotes from "../../images/quotes.svg";
 import "./bookDetails.css";
 
-const BookDetails = ({ book, closeDetails /* visible */ }) => {
+const BookDetails = ({ book, closeDetails, setPosition, setwidth }) => {
   const handleClick = () => {
     closeDetails(false);
-    // visible("flex");
+    setPosition("relative");
+    setwidth("auto");
   };
 
   return (

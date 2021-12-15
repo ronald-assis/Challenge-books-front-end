@@ -2,21 +2,21 @@ import React, { useState } from "react";
 import BookCard from "../BookCard";
 import BookDetails from "../BookDetails";
 import PageChange from "../PageChange";
-// import RefreshToken from "../../service/refreshToken";
 import "./bookList.css";
 
 const BooksList = ({ books = [], allPages, page, setPage }) => {
   const [details, setDetails] = useState(false);
-  // const [visible, setVisible] = useState("flex");
+  const [fixed, setPosition] = useState("relative");
+  const [widthAuto, setwidth] = useState("auto");
   const [bookDetails, setBookDetails] = useState({});
-  // const WIDTH = 1632;
   const currentPage = page;
   const [previousDisabled, setPreviousDisabled] = useState(true);
   const [nextDisabled, setNextDisabled] = useState(false);
 
   const handleClick = (book) => {
     setDetails(true);
-    // setVisible("none");
+    setPosition("fixed");
+    setwidth("86%");
     setBookDetails(book);
   };
 
@@ -34,10 +34,9 @@ const BooksList = ({ books = [], allPages, page, setPage }) => {
 
   return (
     <main>
-      {/* {console.log(RefreshToken())} */}
       <div
-        className="main-content mobile"
-        style={{ display: "flex" /* width: WIDTH */ }}
+        className="main-content"
+        style={{ position: fixed, width: widthAuto }}
       >
         {books.map((book) => (
           <button key={book.id} type="button" onClick={() => handleClick(book)}>
@@ -57,7 +56,8 @@ const BooksList = ({ books = [], allPages, page, setPage }) => {
         <BookDetails
           book={bookDetails}
           closeDetails={setDetails}
-          // visible={setVisible}
+          setPosition={setPosition}
+          setwidth={setwidth}
         />
       )}
     </main>
