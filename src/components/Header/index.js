@@ -9,7 +9,6 @@ const Header = ({ user = "Infelizmente, algo deu errado!", wellcome = "" }) => {
   const handleClick = () => {
     history.push("/login");
     localStorage.removeItem("token");
-    localStorage.removeItem("refresh-token");
   };
 
   return (
