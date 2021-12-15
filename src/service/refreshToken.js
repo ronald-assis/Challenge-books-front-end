@@ -14,7 +14,7 @@ const RefreshToken = async () => {
   };
 
   const url = "https://books.ioasys.com.br/api/v1/auth/refresh-token";
-  const result = fetch(url, object);
+  const result = await fetch(url, object);
   const response = await result.json();
   return response;
 };
