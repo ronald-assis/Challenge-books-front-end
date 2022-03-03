@@ -20,7 +20,6 @@
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/react-in-jsx-scope": 0,
-    "import/prefer-default-export": "off",
-    "react/prop-types": 0
+    "import/prefer-default-export": "off"
   }
 }
