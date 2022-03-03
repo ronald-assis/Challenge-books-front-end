@@ -3,12 +3,17 @@
     "browser": true,
     "es2021": true
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "extends": ["eslint:recommended", "prettier", "plugin:react/recommended"],
   "parserOptions": {
     "ecmaVersion": 11,
     "sourceType": "module"
   },
-  "plugins": ["react", "react-hooks", "eslint-plugin-import-helpers"],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "prettier",
+    "eslint-plugin-import-helpers"
+  ],
   "rules": {
     // "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error",
