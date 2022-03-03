@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Challenge-books-front-end/static/css/main.27c3bd77.chunk.css",
+    "main.js": "/Challenge-books-front-end/static/js/main.c961dc76.chunk.js",
+    "main.js.map": "/Challenge-books-front-end/static/js/main.c961dc76.chunk.js.map",
+    "runtime-main.js": "/Challenge-books-front-end/static/js/runtime-main.8d6416ac.js",
+    "runtime-main.js.map": "/Challenge-books-front-end/static/js/runtime-main.8d6416ac.js.map",
+    "static/js/2.91fe2a4c.chunk.js": "/Challenge-books-front-end/static/js/2.91fe2a4c.chunk.js",
+    "static/js/2.91fe2a4c.chunk.js.map": "/Challenge-books-front-end/static/js/2.91fe2a4c.chunk.js.map",
+    "index.html": "/Challenge-books-front-end/index.html",
+    "static/css/main.27c3bd77.chunk.css.map": "/Challenge-books-front-end/static/css/main.27c3bd77.chunk.css.map",
+    "static/js/2.91fe2a4c.chunk.js.LICENSE.txt": "/Challenge-books-front-end/static/js/2.91fe2a4c.chunk.js.LICENSE.txt",
+    "static/media/login.css": "/Challenge-books-front-end/static/media/background-image.0e957769.svg",
+    "static/media/black-logo.6e859b40.svg": "/Challenge-books-front-end/static/media/black-logo.6e859b40.svg",
+    "static/media/erro.3a01eda2.svg": "/Challenge-books-front-end/static/media/erro.3a01eda2.svg",
+    "static/media/logOut.3265ae02.svg": "/Challenge-books-front-end/static/media/logOut.3265ae02.svg",
+    "static/media/notFound.5cbf8af1.svg": "/Challenge-books-front-end/static/media/notFound.5cbf8af1.svg",
+    "static/media/quotes.73438b98.svg": "/Challenge-books-front-end/static/media/quotes.73438b98.svg",
+    "static/media/white-logo.f413c8a1.svg": "/Challenge-books-front-end/static/media/white-logo.f413c8a1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8d6416ac.js",
+    "static/js/2.91fe2a4c.chunk.js",
+    "static/css/main.27c3bd77.chunk.css",
+    "static/js/main.c961dc76.chunk.js"
+  ]
+}
