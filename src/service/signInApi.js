@@ -8,21 +8,16 @@ const signInApi = async (login, pass) => {
     body: JSON.stringify({ email, password }),
   };
   const url = `https://books.ioasys.com.br/api/v1/auth/sign-in`;
-
-  const result = await fetch(url, object);
-  const response = await result.json();
-  if (result.status === 200) {
-    localStorage.setItem("token", result.headers.get("Authorization"));
+  try {
+    const result = await fetch(url, object);
+    const response = await result.json();
     localStorage.setItem("refresh-token", result.headers.get("refresh-token"));
+    localStorage.setItem("token", result.headers.get("Authorization"));
     return response;
-  } else if (
-    result.status === 400 ||
-    result.status === 401 ||
-    result.status === 500
-  ) {
-    return response;
+  } catch (error) {
+    const result = await fetch(url, object);
+    return console.log(result.status);
   }
-  return response;
 };
 
 export default signInApi;
