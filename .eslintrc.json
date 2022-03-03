@@ -1,36 +1,26 @@
 {
   "env": {
     "browser": true,
-    "es2021": true,
-    "jest": true
+    "es2021": true
   },
-  "extends": [
-    "plugin:react/recommended",
-    "prettier",
-    "plugin:prettier/recommended"
-  ],
+  "extends": ["eslint:recommended", "prettier", "plugin:react/recommended"],
   "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 12,
+    "ecmaVersion": 11,
     "sourceType": "module"
   },
-  "plugins": ["react", "prettier"],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "prettier",
+    "eslint-plugin-import-helpers"
+  ],
   "rules": {
-    "react/function-component-definition": [
-      2,
-      {
-        "namedComponents": "arrow-function",
-        "unnamedComponents": "arrow-function"
-      }
-    ],
-    "react/jsx-filename-extension": 0,
-    "react/prop-types": 0,
-    "react/jsx-props-no-spreading": 0,
-    "react/no-unknown-property": 0,
-    "react/jsx-no-constructed-context-values": 0,
-    "no-else-return": 0,
-    "react/no-array-index-key": 0
+    "prettier/prettier": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/react-in-jsx-scope": 0,
+    "import/prefer-default-export": "off",
+    "react/prop-types": 0
   }
 }
