@@ -8,18 +8,14 @@
     "ecmaVersion": 11,
     "sourceType": "module"
   },
-  "plugins": [
-    "react",
-    "react-hooks",
-    "prettier",
-    "eslint-plugin-import-helpers"
-  ],
+  "plugins": ["react", "react-hooks", "eslint-plugin-import-helpers"],
   "rules": {
     // "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/react-in-jsx-scope": 0,
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "react/prop-types": 0
   }
 }
